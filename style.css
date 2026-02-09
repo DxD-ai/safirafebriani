@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+
+body {
+  margin: 0;
+  background: #eaf2ff;
+  color: #1e293b;
+}
+
+.header {
+  background: #0f4c81;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.identitas {
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #1e293b;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.article-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.meta {
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 15px;
+}
+
+.koran {
+  column-count: 2;
+  column-gap: 40px;
+  text-align: justify;
+}
+
+.footer {
+  text-align: center;
+  background: #0f4c81;
+  color: white;
+  padding: 15px;
+}
+
+.toolbar {
+  text-align: center;
+  margin: 15px;
+}
+
+.toolbar button {
+  padding: 10px 20px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .koran {
+    column-count: 1;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  body {
+    background: white;
+  }
+  .header, .footer {
+    background: none;
+    color: black;
+  }
+}

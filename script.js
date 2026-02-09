@@ -1,0 +1,1 @@
+console.log("LKPD IPAS siap dicetak");
